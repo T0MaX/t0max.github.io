@@ -1,1 +1,170 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font family */
+body {
+  background-color: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Style navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Style header */
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Style main sections */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>My Name</h1>
+		<h2>My Job Title</h2>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Insert a brief summary about yourself here.</p>
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li>Skill 1</li>
+				<li>Skill 2</li>
+				<li>Skill 3</li>
+			</ul>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li><a href="#">Project 1</a></li>
+				<li><a href="#">Project 2</a></li>
+				<li><a href="#">Project 3</a></li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright © My Name</p>
+	</footer>
+</body>
+</html>
+
