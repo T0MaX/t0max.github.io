@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>My Personal Website</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,18 +111,36 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #555;
 }
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.social-icons a:hover {
+  color: #f1f1f1;
+}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+                    <ul>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#skills">Skills</a></li>
+                         <li><a href="#projects">Projects</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         </ul>
+                         <div class="social-icons">
+                         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                         </div>
+               </nav>
 		<h1>My Name</h1>
 		<h2>My Job Title</h2>
 	</header>
